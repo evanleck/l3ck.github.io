@@ -1,5 +1,5 @@
 name: What the What?!
 markdown: redcarpet
-permalink: /:year/:month/:day/:title.html
+permalink: /:year/:month/:title.html
 port: 4567
 pygments: true
