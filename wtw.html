@@ -1,0 +1,15 @@
+---
+layout: default
+title: All the Whats
+---
+
+<h2>Good God, Lemon.</h2>
+<img id='lemonsauce' src=''>
+
+<script>
+  var img      = document.getElementById('lemonsauce'),
+      lizs     = ['liz-cando.jpg', 'liz-joker.jpg', 'liz-leia.jpeg', 'liz-nerdrage.gif', 'liz-wtw.gif'],
+      selected = Math.floor((Math.random() * lizs.length));
+
+  img.src = '/assets/' + lizs[selected];
+</script>
