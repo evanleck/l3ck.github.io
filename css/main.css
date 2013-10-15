@@ -12,8 +12,7 @@ a         { color: #00a; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
 
-#lemonsauce {
-  border: 1px solid #ddd;
+#lemonsauce, [itemprop=articleBody] img {
   display: block;
   margin: 30px auto 100px;
   padding: 3px;
@@ -77,7 +76,6 @@ h2[itemprop=name] {
   h2[itemprop=name] {
     font-size: 3em;
     margin: 0 -0.5em 0.25em;
-
   }
 }
 
@@ -108,10 +106,12 @@ h2[itemprop=name] {
 /* posts */
 /* standard */
 [itemprop=articleBody] pre,
-[itemprop=articleBody] code {
+[itemprop=articleBody] code,
+[itemprop=articleBody] img,
+#lemonsauce {
   border: 1px solid #ddd;
   background-color: #eef;
-  border-radius: 0.2em;
+  border-radius: 3px;
 }
 
 [itemprop=articleBody] pre {

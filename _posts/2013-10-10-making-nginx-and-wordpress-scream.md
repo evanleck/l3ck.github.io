@@ -68,3 +68,13 @@ Let's break this down a bit:
 It's pretty simple and with this in place, we have a pretty robust system capable of handling _loads_ of traffic with nary a moments notice. Like, fucking *loads* of traffic.
 
 So yeah, it's screamin' now.
+
+**Update 2013 October 14:**
+
+For reference, I was running four load balanced, non-optimized, c1.medium servers in EC2 with Apache+PHP serving the same site that totally crumbled around 3,000 active users. Four fucking servers.
+
+With this set up, I've got one server (same c1.medium in EC2) that handled _~ 3,900 users and never spiked above 15% CPU utilization_.
+
+I know, I can hardly believe it myself.
+
+![Hipster Nonsense](/assets/liz-hipsternonsense.gif)
