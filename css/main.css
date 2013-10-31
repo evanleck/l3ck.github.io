@@ -1,7 +1,5 @@
 html, body { min-height: 100%; }
 body {
-  border-top: 2px dotted #a00;
-  border-bottom: 2px dotted #a00;
   color: #292724;
   font: 22px Lora, serif;
   text-align: center;
