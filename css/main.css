@@ -1,12 +1,13 @@
-html, body { height: 100%; }
+html, body { min-height: 100%; }
 body {
+  border-top: 2px dotted #a00;
+  border-bottom: 2px dotted #a00;
+  color: #292724;
   font: 22px Lora, serif;
   text-align: center;
 }
 
-code, pre {
-  font-family: 'Ubuntu Mono', monospace;
-}
+code, pre { font-family: 'Ubuntu Mono', monospace; }
 
 a         { color: #00a; }
 a:hover   { color: #000; }
@@ -39,11 +40,11 @@ ul.posts span {
 
 /* main section */
 .site {
-  text-align: justify;
-  margin: 0.5em auto 3em;
+  line-height: 1.5em;
+  margin: 0.5em auto 0;
   max-width: 32em;
   padding: 0 1em;
-  line-height: 1.5em;
+  text-align: justify;
 }
 
 .header a {
@@ -89,6 +90,7 @@ h2[itemprop=name] {
   color: #666;
   border-top: 4px solid #eee;
   margin-top: 2em;
+  padding-bottom: 6em;
   overflow: hidden;
 }
 .footer .contact {
