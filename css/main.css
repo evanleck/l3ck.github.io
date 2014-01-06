@@ -83,6 +83,10 @@ h2[itemprop=name] {
   margin: 0;
 }
 
+[itemprop=author] [itemprop=name] {
+  font-weight: bold;
+}
+
 .footer {
   font-size: 70%;
   color: #666;
@@ -95,6 +99,12 @@ h2[itemprop=name] {
   float: left;
   margin-right: 3em;
 }
+.footer .links {
+  float: right;
+  margin-right: 0;
+}
+
+.footer .contact small { line-height: 15px; }
 .footer .rss img { border: 0; }
 .footer .contact a { color: #8085C1; }
 .footer .rss {
