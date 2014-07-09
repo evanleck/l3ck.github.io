@@ -40,7 +40,7 @@ ul.posts span {
 .site {
   line-height: 1.5em;
   margin: 0.5em auto 0;
-  max-width: 32em;
+  max-width: 30em;
   padding: 0 1em;
   text-align: justify;
 }
@@ -52,7 +52,7 @@ ul.posts span {
 .header h1 {
   display: inline-block;
   font-size: 100%;
-  font-weigh: normal;
+  font-weight: normal;
   margin-bottom: 2em;
 }
 
