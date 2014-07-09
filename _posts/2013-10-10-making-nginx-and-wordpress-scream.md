@@ -19,7 +19,7 @@ To get the burden off of PHP we're going to bring [Nginx](http://nginx.org/) int
 
 Next up, let's get Nginx set up. I'll assume here that you've already gotten Nginx installed and pointed it at the base directory for your WordPress install. The trick now is to point Nginx first at the directory that W3 Total Cache writes cached files to and then, only if there's nothing there, to PHP. So let's do this:
 
-{% highlight nginx %}
+```nginx
 set $cache_uri $request_uri;
 if ($request_uri ~* "(.*)\?(.*)") {
 	set $cache_uri $1;
@@ -28,13 +28,13 @@ if ($request_uri ~* "(.*)\?(.*)") {
 location / {
 	try_files /wp-content/cache/page_enhanced/$http_host/$cache_uri/_index.html $uri $uri/ /index.php;
 }
-{% endhighlight %}
+```
 
 Here we set a `$cache_uri` variable to the internal `$request_uri` value then check for and remove the query string to avoid trying to access wacky directories. Then we look to the directory that W3 writes its cached content to (`/wp-content/cache/page_enhanced/$http_host/`) and look for a folder named after the request URI with a file named `_index.html` in it. That's our flat HTML, superduperfast version of that page and that's what we want to serve to the client.
 
 This is huge. We've now taken PHP & MySQL out of the equation for the bulk of the requests to our WordPress site, but we can do more. We can make it better. Let's add [Nginx's awesome FastCGI caching](http://nginx.org/en/docs/http/ngx_http_fastcgi_module.html). Here's an abbreviated version of the Nginx config that'll get us there:
 
-{% highlight nginx %}
+```nginx
 http {
   fastcgi_temp_path  /var/run/nginx-cache 1 2;
   fastcgi_cache_path /var/run/nginx-cache levels=1:2 keys_zone=WORDPRESS:500m inactive=3m;
@@ -57,7 +57,7 @@ http {
     }
   }
 }
-{% endhighlight %}
+```
 
 Let's break this down a bit:
 

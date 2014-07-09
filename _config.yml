@@ -1,5 +1,5 @@
-name: What the What?!
+name: Evan Lecklider
 markdown: redcarpet
 permalink: /:year/:month/:title.html
 port: 4567
-pygments: true
+highlighter: pygments

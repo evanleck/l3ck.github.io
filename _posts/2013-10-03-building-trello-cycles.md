@@ -32,7 +32,7 @@ This script adds some basic mathematical methods to the Array prototype chain in
 
 With all of that, you can call `[1, 2, 3].sum()` and `[1, 2, 3].mean()` to your heart's content.
 
-{% highlight coffeescript %}
+```coffeescript
 # max
 if "function" isnt typeof Array::max
   Array::max = ->
@@ -128,5 +128,5 @@ if "function" isnt typeof Array::stddev
 
     # square root of variance
     Math.sqrt @variance()
-{% endhighlight %}
+```
 

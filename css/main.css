@@ -115,6 +115,9 @@ h2[itemprop=name] {
 
 /* posts */
 /* standard */
+[itemprop=articleBody] {
+  line-height: 1.6em;
+}
 [itemprop=articleBody] pre,
 [itemprop=articleBody] code,
 [itemprop=articleBody] img,
