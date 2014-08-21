@@ -20,12 +20,13 @@ title: All the Whats
         items = list.getElementsByTagName('li');
 
     for (var i = items.length - 1; i >= 0; i--) {
-      // create a span and insert it before the link
+      /* create a span and insert it before the link */
       var item = items[i],
           link = item.getElementsByTagName('a')[0],
           span = document.createElement('span'),
-          pattern = GeoPattern.generate(link.textContent + ' | Evan Lecklider');
+          pattern = GeoPattern.generate(link.textContent + ' | {{ site.name }}');
 
+      /* damn, this is sexy, but I wish we could batch these... */
       span.classList.add('pattern');
       span.style.backgroundImage = pattern.toDataUrl();
 

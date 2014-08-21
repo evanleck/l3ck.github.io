@@ -54,11 +54,12 @@ ul.posts {
 
   .pattern {
     background-color: #777;
-    display: inline-block;
-    min-width: 1em;
-    min-height: 1em;
     border-radius: 1em;
+    border: 1px solid rgba($black, 0.3);
+    display: inline-block;
     margin-right: 0.5em;
+    min-height: 1em;
+    min-width: 1em;
     position: relative;
     top: 0.2em;
   }
