@@ -8,7 +8,7 @@ I recently [made the switch away from Gmail]({% post_url 2013-10-30-leaving-gmai
 
 Part of what I changed along with my email address was how I sync contacts & calendars; for the longest time I've used Google as my One True Holy Canon&trade; but with Gmail out of the picture I thought it prudent to re-evaluate. Without the complete interconnectedness that Gmail+Gcal+Gaddresses offers, I saw no great reason to stick within the empire. I [looked around a ton](http://lmgtfy.com/?q=online+calendar) but nothing stood out that was as feature complete as either Gmail or the next best alternative: iCloud. So...
 
-### Out of the Frying Pan
+## Out of the Frying Pan
 
 I've moved contacts and calendars to iCloud. I realize it's a bit of a dubious move given that I'm not technically paying Apple for those services, but I feel like it's a step in the right direction at the least. My decision was guided mostly by the fact that Fastmail [doesn't have read/write support for their LDAP address book](https://www.fastmail.fm/help/address_book_ldap_access.html) and offer no calendaring service whatsoever.
 

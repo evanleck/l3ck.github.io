@@ -9,7 +9,7 @@ WordPress is... interesting. It's sort of awesome and sort of The Worst<sup>&tra
 
 Nerdrage aside, having a nice GUI to work with and a quick way to slap a site together is valuable to a lot of people and companies. The savings involved probably outweigh the groans and grumbles of the developers who put the site together because ultimately, when the client needs to update the site, they can. So we charge on...
 
-### Caching WordPress
+## Caching WordPress
 
 The idea here is to get WordPress the fuck out of the way. That means PHP/MySQL shouldn't even get fired up for a "normal" request. Posts and pages are effectively static so why the hell should PHP have to get itself all worked up just to render out the same shit as last time? It shouldn't. Obviously.
 

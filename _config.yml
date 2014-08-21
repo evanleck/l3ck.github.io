@@ -3,3 +3,5 @@ markdown: redcarpet
 permalink: /:year/:month/:title.html
 port: 4567
 highlighter: pygments
+sass:
+  style: compressed

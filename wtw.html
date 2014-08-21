@@ -3,13 +3,20 @@ layout: default
 title: All the Whats
 ---
 
-<h2>Good God, Lemon.</h2>
-<img id='lemonsauce' src=''>
+<div id='pattern'>
+  <div class='container'>
+    <h2>Good God, Lemon.</h2>
+  </div>
+</div>
 
-<script>
-  var img      = document.getElementById('lemonsauce'),
-      lizs     = ['liz-cando.jpg', 'liz-joker.jpg', 'liz-leia.jpeg', 'liz-nerdrage.gif', 'liz-wtw.gif', 'liz-lifeishappening.gif', 'liz-fresh-hell.gif', 'liz-hipsternonsense.gif'],
-      selected = Math.floor((Math.random() * lizs.length));
+<div class='container'>
+  <img id='lemonsauce' src=''>
 
-  img.src = '/assets/' + lizs[selected];
-</script>
+  <script>
+    var img      = document.getElementById('lemonsauce'),
+        lizs     = ['liz-cando.jpg', 'liz-joker.jpg', 'liz-leia.jpeg', 'liz-nerdrage.gif', 'liz-wtw.gif', 'liz-lifeishappening.gif', 'liz-fresh-hell.gif', 'liz-hipsternonsense.gif'],
+        selected = Math.floor((Math.random() * lizs.length));
+
+    img.src = '/assets/' + lizs[selected];
+  </script>
+</div>
