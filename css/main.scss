@@ -2,7 +2,7 @@
 ---
 
 $black: #292724;
-
+$red: #a00;
 
 %bordered {
   border: 1px solid #ddd;
@@ -20,10 +20,10 @@ body {
 code, pre { font-family: 'Ubuntu Mono', monospace; }
 
 a {
-  color: #00a;
+  color: $red;
 
-  &:hover   { color: #000; }
-  &:visited { color: #a0a; }
+  // &:visited { color: lighten($red, 10%); text-decoration: none; }
+  &:hover   { color: darken($red, 20%); }
 }
 
 #lemonsauce { @extend %bordered; }
@@ -45,6 +45,14 @@ ul.posts {
   li {
     line-height: 1.75em;
     margin-bottom: 0.25em;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .date {
@@ -85,10 +93,10 @@ ul.posts {
     a {
       background: rgba(white, 0.6);
       border-radius: 3px;
-      color: #a00;
+      color: $red;
       padding: 0.25em 0.5em;
 
-      &:hover { color: #000; text-decoration: underline; }
+      &:hover { color: darken($red, 10%); text-decoration: underline; }
       &.extra {
         color: #aaa;
         margin-left: 1em;
@@ -144,6 +152,19 @@ ul.posts {
   line-height: 1.6em;
   padding: 0 1em;
   text-align: justify;
+
+  a {
+    background: rgba($red, .07);
+    border-radius: .1em;
+    margin: 0 -.2em;
+    padding: 0 .2em;
+    text-decoration: none;
+
+    &:visited { background: none; text-decoration: none; }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
   pre, code, img { @extend %bordered; }
 
